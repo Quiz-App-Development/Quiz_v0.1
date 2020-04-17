@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_Page">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME!"
+        android:textSize="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/ic_launcher_background"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/Enter_ID"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="200dp"
+        android:text="Enter ID:"
+        android:textSize="28dp"
+        android:textColor="@color/colorPrimary"></TextView>
+
+    <EditText
+        android:id="@+id/ID"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/Enter_ID"></EditText>
+
+    <TextView
+        android:id="@+id/password"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="270dp"
+        android:text="New Password:"
+        android:textSize="20dp"></TextView>
+
+    <EditText
+        android:id="@+id/New_Password"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="280dp"
+        android:layout_toRightOf="@+id/password"
+        android:inputType="textPassword"
+        android:layout_marginRight="5dp"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/password2"
+        android:layout_width="120dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="340dp"
+        android:text="Confirm Password:"
+        android:textSize="20dp"></TextView>
+
+    <EditText
+        android:id="@+id/Confrim_Password"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="340dp"
+        android:layout_toRightOf="@+id/password"
+        android:inputType="textPassword"
+        android:layout_marginRight="5dp"
+        ></EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="107dp"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:background="@color/common_google_signin_btn_text_light_disabled"></Button>
+
+</RelativeLayout>
